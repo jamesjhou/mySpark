@@ -13,7 +13,7 @@ from pyspark import SparkConf
 from pyspark import SparkContext
 
 conf = SparkConf()
-conf.setMaster("local")
+conf.setMaster("local[3]")
 conf.setAppName('local_spark')
 
 sc = SparkContext(conf = conf)
